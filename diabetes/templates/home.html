@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Diabetes Prediction</title>
+    </head>
+<body>
+    <nav class=" bg-blue-600 text-white flex justify-between py-3">
+        <span class="text-2xl flex items-center mx-5 font-bold text-3xl">Naut Aid</span>        
+        <ul class="px-28 py-4 flex space-x-11 justify-end">
+            <li class="cursor-pointer text-xl"><a href="http://127.0.0.1:8000/">Home</a></li>
+            <li class="cursor-pointer text-xl"><a href="http://127.0.0.1:8000/predict/">Prediction</a></li>
+            <li class="cursor-pointer text-xl"><a href="http://127.0.0.1:8000/results/">Results</a></li>
+        </ul>
+    </nav>    
+        <div class="flex">
+
+        <div>
+            <p class="text-center text-3xl py-4 font-bold ml-10 mt-5">Diabetes Prediction System using Machine Learning</p>
+            <form action = "predict" class="ml-20">
+                <input type = "submit" value = "Lets get started" class="bg-green-700 cursor-pointer text-white py-2 px-2 font-bold rounded-md hover:bg-green-500 ml-20">
+            </form>
+            <p class="py-6 text-xl px-5 text-gray-700">Diabetes is a chronic disease with the potential to cause a worldwide health care crisis. According to International Diabetes Federation 382 million people are living with diabetes across the whole world. By 2035, this will be doubled as 592 million.The aim of this project is to develop a system which can perform early prediction of diabetes for a patient with a higher accuracy by combining the results of different machine learning techniques. The algorithms like K nearest neighbour, Logistic Regression, Random forest, Support vector machine and Decision tree are used. </p>            
+        </div>
+            <img src="{% static '/images/doctor.png' %}" class = "mx-10" alt="">
+        </div>
+        
+        
+</body>
+</html>
